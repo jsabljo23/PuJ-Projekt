@@ -9,7 +9,7 @@ public class DatabaseConn {
 
     public Connection getConnection(){
 
-        String dbName = "PUJCarBuy";
+        String dbName = "CarBuyDB";
         String dbUser = "root";
         String dbPassword = "";
         String dbUrl = "jdbc:mysql://localhost/" + dbName;
