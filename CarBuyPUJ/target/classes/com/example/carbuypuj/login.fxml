@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carbuypuj.HelloController">
+    <left>
+        <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #124b72#124b72;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="2.0" layoutY="120.0" prefHeight="17.0" prefWidth="222.0" text="CarBuy" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="2.0" layoutY="162.0" prefHeight="17.0" prefWidth="222.0" text="Online prodaja" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #11caef#11caef;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="25.0" layoutY="32.0" prefHeight="17.0" prefWidth="222.0" text="Prijava u sustav" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Line endX="100.0" layoutX="136.0" layoutY="68.0" startX="-100.0" stroke="WHITE" />
+                <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="31.0" layoutY="106.0" prefHeight="26.0" prefWidth="210.0" promptText="Korisnicko ime" style="-fx-background-color: #ffff;" />
+                <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="32.0" layoutY="175.0" prefHeight="26.0" prefWidth="206.0" promptText="Lozinka" style="-fx-background-color: #ffff;" />
+                <Button fx:id="loginButton" layoutX="86.0" layoutY="235.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #124b72#124b72 #124b72#124b72;" text="Prijava" textFill="WHITE" />
+                <Button fx:id="cancelButton" layoutX="86.0" layoutY="283.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #124b72#124b72 #124b72#124b72;" text="Odustani" textFill="WHITE" />
+                <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="34.0" layoutY="79.0" prefHeight="18.0" prefWidth="204.0" textFill="#eb0505" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" style="-fx-background-color: #005b96#005b96;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carbuypuj.ProductSearchController">
+    <children>
+        <TableView fx:id="productTableView" layoutX="30.0" layoutY="86.0" prefHeight="500.0" prefWidth="1020.0">
+            <columns>
+                <TableColumn fx:id="idTableColumn" prefWidth="115.0" text="ID" />
+                <TableColumn fx:id="markaTableColumn" prefWidth="205.0" text="Marka" />
+                <TableColumn fx:id="modelTableColumn" prefWidth="212.0" text="Model" />
+                <TableColumn fx:id="godinaTableColumn" prefWidth="79.0" text="Godina" />
+                <TableColumn fx:id="vinTableColumn" prefWidth="305.0" text="VIN" />
+                <TableColumn fx:id="cijenaTableColumn" minWidth="0.0" prefWidth="103.0" text="Cijena" />
+            </columns>
+        </TableView>
+        <TextField fx:id="keywordTextField" layoutX="30.0" layoutY="44.0" prefHeight="26.0" prefWidth="760.0" promptText="Unesite pojam za pretrazivanje" style="-fx-background-color: #fff;" />
+        <Label layoutX="30.0" layoutY="14.0" prefHeight="18.0" prefWidth="189.0" text="Pretrazivanje sustava" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>
